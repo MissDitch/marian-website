@@ -1,0 +1,183 @@
+html {
+    /* better not set a font-size here, so user can change it in browser */
+    /* font-size: 16px; */
+    /*document level sized in px */
+}
+body {
+    /* background: #fff; */
+    /* background: #469be3; */
+    background-image: linear-gradient(to right, #469be3, #16e6d5);
+    /* color: #020d53; */
+    font-family: 'Open Sans', sans-serif;
+
+}
+body#sticky-header {
+      /* this padding is for the sticky-shrinknav */
+      /* padding-top: 330px; */
+      padding-top: 61.8vh;
+}
+li {
+    list-style: none;
+}
+.article {
+    font-size: 1.2rem;  /* module size sized in rems */
+}
+p {
+    /* font-size: 0.8em;   */
+    /* actual text element sized in ems */
+}
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+h2 {
+    /* font-size: 2rem; */
+}
+h3 {
+    font-weight: 700;
+}
+@media print, screen and (min-width: 40em) {
+    h1, .h1 {
+      font-size: 4rem;
+    }
+    h2, .h2 {
+        font-size: 3rem;
+    }
+}
+/* =============================================
+foundation code sticky-shrinknav  ================= */
+
+
+
+
+  .sticky-shrinknav-menu {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+    bottom: 0;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    width: 100%;
+    background-color: rgb(70, 155, 227, 0.5);
+    background-blend-mode: multiply;
+
+    transition: all 0.5s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+  }
+
+  .sticky-shrinknav-menu li {
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .sticky-shrinknav-menu li:hover {
+    box-shadow: 0 0 0 1px #fefefe;
+  }
+
+  .sticky-shrinknav-menu a {
+    color: #fefefe;
+  }
+
+  .sticky-shrinknav-header-title {
+    transition: all 0.3s ease;
+    position: relative;
+    -webkit-transform: translateY(-1.875rem);
+        -ms-transform: translateY(-1.875rem);
+            transform: translateY(-1.875rem);
+    margin-bottom: 0;
+    color: #fefefe;
+    text-transform: uppercase;
+  }
+
+  .sticky-shrinknav-header {
+    width: 100%;
+    max-width: 120rem;
+    /* height: 300px; */
+    /* height: 480px; */
+    height: 61.8vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* background-color: #469be3;
+    background-color: rgb(33, 150, 227); */
+
+    /* background-image: url("../img/Stad01Def.jpg"); */
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    /* these next two lines centers the fixed header */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+
+  body.sticky-shrinknav-wrapper {
+    padding-top: 130px;
+  }
+
+  body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+    height: 3.75rem;
+    background-color: rgba(23, 121, 186, 0.9);
+  }
+
+  body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    transition: all 0.3s ease;
+  }
+
+
+/* ===========================================  navigation =====================================  */
+.title-bar {
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #469be3;
+    background-color: rgb(33, 150, 227, 0.3);
+    background-blend-mode: multiply;
+}
+
+
+
+/* end navigation */
+.intro, .service {
+    text-align: center;
+    padding: 4rem 0;
+}
+.big-image {
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    color: #fff;
+    transition: all 0.5s ease;
+    /* transition-delay: 0.5s; */
+}
