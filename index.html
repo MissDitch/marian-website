@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sloot Webdesign</title>
+    <title>Image Magnifique</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body id="sticky-header">
-        <div class="title-bar hide-for-medium">
+  <body>
+
+        <div class="title-bar ">
                 <div class="title-bar-left">
-                  <span class="title-bar-title">Marian Sloot Webdesign</span>
+                  <span class="title-bar-title">Image Magnifique</span>
                 </div>
                 <!-- <div class="title-bar-right">
                   <button class="menu-icon" type="button" data-toggle="navmenu"></button>
@@ -20,11 +21,11 @@
               </div>
 
 
-        <header class="sticky-shrinknav-header" data-interchange="[img/stad-sm.jpg, small], [img/Stad01Def.jpg, medium], [img/Stad01Def.jpg, large]" alt="illustration">
+        <header class="sticky-shrinknav-header" data-interchange="[img/Stad01Def.jpg, small], [img/Stad01Def.jpg, medium], [img/Stad01Def.jpg, large]" alt="illustration">
 
             <h1 class="sticky-shrinknav-header-title">Smashing First Impressions</h1>
             <ul class="menu align-center sticky-shrinknav-menu" id="navmenu" data-toggler="" >
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" active>Home</a></li>
                 <li><a href="hero.html">Gallery</a></li>
                 <!-- <li><a href="hero-curtain.html">hero curtain page</a></li> -->
                 <li><a href="#">Contact</a></li>
@@ -35,38 +36,48 @@
         <div class="grid-container">
         <!-- <div class="grid-y large-grid-frame"> -->
             <div class="grid-x grid-padding-x  ">
-                <div class="large-12 cell service hide-for-small-only">
+                <div class="large-12 cell service ">
+                    <!-- hide-for-small-only -->
                     <!-- <h2>We offer:</h2> -->
                     <div class="grid-x grid-padding-x">
-                        <div class="medium-4 cell  intro ">
+                        <div class="medium-4 cell  ">
                                 <h3 >Web Header Design</h3>
-                                <p>
+                                <p class="hide-for-small-only">
                                     <!-- <a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br /> -->
                                     Redesign of your website's header<br> Large background illustration included </p>
                         </div>
 
-                        <div class="medium-4 cell  intro">
+                        <div class="medium-4 cell ">
                                 <h3 >Hero Images</h3>
-                                <p>
+                                <p class="hide-for-small-only">
                                     <!-- <a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br /> -->
                                     Only a large image <br>
                                     No redesign</p>
                         </div>
-                        <div class="medium-4 cell  intro">
+                        <div class="medium-4 cell ">
                             <h3 >Illustrations / Banners</h3>
-                            <p>Smaller images  <br>
+                            <p class="hide-for-small-only">Smaller images  <br>
                             To spice up your website
                                 <!-- <a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br /> -->
                                 </p>
                         </div>
+                        <div class="bottom-content-section" data-magellan data-threshold="0">
+                                <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+                              </div>
+
+                            </div>
+
+                            <div id="main-content-section" data-magellan-target="main-content-section">
+                              <!-- your content goes here -->
+                            </div>
                     </div>
                 </div>
             </div>
 
             <div class="grid-x">
 
-                    <div class="large-12 cell intro big-image">
-                        <h2>Gallery</h2>
+                    <div id="#main-content-section" data-magellan-target="main-content-section"     class="large-12 cell intro big-image">
+                        <h1>Gallery</h1>
 
                             <noscript><img src="img/Stad01Def.jpg"></noscript>
 

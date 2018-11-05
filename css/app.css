@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
-body#sticky-header {
+body {
       /* this padding is for the sticky-shrinknav */
       /* padding-top: 330px; */
       padding-top: 61.8vh;
@@ -30,6 +30,8 @@ h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    color: white;
+    line-height: 1.1;
 
 }
 h1 {
@@ -50,6 +52,27 @@ h3 {
         font-size: 3rem;
     }
 }
+
+/* ===========================================  title section =====================================  */
+.title-bar {
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #469be3;
+    background-color: rgb(33, 150, 227, 1);
+    background-image: linear-gradient(to right, #469be3, #16e6d5);
+    /* background-blend-mode: multiply; */
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0.3rem;
+
+}
+
 /* =============================================
 foundation code sticky-shrinknav  ================= */
 
@@ -64,10 +87,10 @@ foundation code sticky-shrinknav  ================= */
         transform: translateX(-50%);
 
     bottom: 0;
-    height: 3.75rem;
+    height: 2.75rem;
     line-height: 3.75rem;
     width: 100%;
-    background-color: rgb(70, 155, 227, 0.5);
+    background-color: rgb(70, 155, 227, 0.8);
     background-blend-mode: multiply;
 
     transition: all 0.5s ease;
@@ -132,6 +155,7 @@ foundation code sticky-shrinknav  ================= */
     margin: 0 auto;
     overflow: hidden;
     transition: all 0.5s ease;
+    z-index: 5;
   }
 
 
@@ -140,7 +164,7 @@ foundation code sticky-shrinknav  ================= */
   }
 
   body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
-    height: 3.75rem;
+    height: 5rem;
     background-color: rgba(23, 121, 186, 0.9);
   }
 
@@ -152,27 +176,13 @@ foundation code sticky-shrinknav  ================= */
   }
 
 
-/* ===========================================  navigation =====================================  */
-.title-bar {
-
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: normal;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    background-color: #469be3;
-    background-color: rgb(33, 150, 227, 0.3);
-    background-blend-mode: multiply;
-}
 
 
 
 /* end navigation */
 .intro, .service {
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
 }
 .big-image {
     margin: 0;
@@ -181,3 +191,15 @@ foundation code sticky-shrinknav  ================= */
     transition: all 0.5s ease;
     /* transition-delay: 0.5s; */
 }
+
+.bottom-content-section {
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
