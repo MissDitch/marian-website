@@ -4,18 +4,13 @@ html {
     /*document level sized in px */
 }
 body {
-    /* background: #fff; */
-    /* background: #469be3; */
-    background-image: linear-gradient(to right, #469be3, #16e6d5);
+    background: #fff;
+
     /* color: #020d53; */
     font-family: 'Open Sans', sans-serif;
 
 }
-body {
-      /* this padding is for the sticky-shrinknav */
-      /* padding-top: 330px; */
-      padding-top: 61.8vh;
-}
+
 li {
     list-style: none;
 }
@@ -54,129 +49,56 @@ h3 {
 }
 
 /* ===========================================  title section =====================================  */
-.title-bar {
+.title-bar, .top-bar
+ {
 
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: space-between;
     align-items: normal;
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100%;
-    background-color: #469be3;
-    background-color: rgb(33, 150, 227, 1);
-    background-image: linear-gradient(to right, #469be3, #16e6d5);
+    width: 100%; */
+    background-color: #fff;
+
     /* background-blend-mode: multiply; */
     font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0.3rem;
 
 }
+.title-bar {
+    color: #000;
+}
 
-/* =============================================
-foundation code sticky-shrinknav  ================= */
+/* responsive Sticky Menu  */
 
+@media screen and (max-width: 39.9375em) {
+    .no-js .top-bar {
+      display: none;
+    }
+  }
 
+  @media print, screen and (min-width: 40em) {
+    .no-js .title-bar {
+      display: none;
+    }
+  }
 
-
-  .sticky-shrinknav-menu {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-
-    bottom: 0;
-    height: 2.75rem;
-    line-height: 3.75rem;
+  [data-sticky] {
     width: 100%;
-    background-color: rgb(70, 155, 227, 0.8);
-    background-blend-mode: multiply;
-
-    transition: all 0.5s ease;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-
   }
 
-  .sticky-shrinknav-menu li {
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-
-  .sticky-shrinknav-menu li:hover {
-    box-shadow: 0 0 0 1px #fefefe;
-  }
-
-  .sticky-shrinknav-menu a {
-    color: #fefefe;
-  }
-
-  .sticky-shrinknav-header-title {
-    transition: all 0.3s ease;
-    position: relative;
-    -webkit-transform: translateY(-1.875rem);
-        -ms-transform: translateY(-1.875rem);
-            transform: translateY(-1.875rem);
-    margin-bottom: 0;
-    color: #fefefe;
-    text-transform: uppercase;
-  }
-
-  .sticky-shrinknav-header {
-    width: 100%;
-    max-width: 120rem;
-    /* height: 300px; */
-    /* height: 480px; */
-    height: 61.8vh;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    /* background-color: #469be3;
-    background-color: rgb(33, 150, 227); */
-
-    /* background-image: url("../img/Stad01Def.jpg"); */
-    background-position: top;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    /* these next two lines centers the fixed header */
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-    margin: 0 auto;
-    overflow: hidden;
-    transition: all 0.5s ease;
+  .sticky-container {
     z-index: 5;
   }
 
+  /* end Responsive Sticky Menu  */
 
-  body.sticky-shrinknav-wrapper {
-    padding-top: 130px;
+  .menu-icon::after {
+      background: #000;
+      box-shadow: 0 7px 0 #000, 0 14px 0 #000;
   }
-
-  body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
-    height: 5rem;
-    background-color: rgba(23, 121, 186, 0.9);
-  }
-
-  body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
-    -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0);
-    transition: all 0.3s ease;
-  }
-
-
-
 
 
 /* end navigation */
@@ -203,3 +125,137 @@ foundation code sticky-shrinknav  ================= */
     width: 3.75rem;
     fill: #fefefe;
   }
+
+
+  /* clean hero slider */
+
+.clean-hero-slider .orbit-caption {
+    width: auto;
+    height: auto;
+    background: #0a0a0a;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    padding: 0.2rem 2rem;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-caption {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      text-align: left;
+      width: 70%;
+      right: 0;
+      padding: 1rem 2rem;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
+    .clean-hero-slider .orbit-caption {
+      padding-right: 10%;
+    }
+  }
+
+  @media screen and (min-width: 90em) {
+    .clean-hero-slider .orbit-caption {
+      padding-right: 20%;
+    }
+  }
+
+  .clean-hero-slider .orbit-caption p {
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-caption p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .clean-hero-slider .orbit-caption h3 {
+    color: #ffae00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-caption h3 {
+      font-size: 2.5rem;
+      font-weight: normal;
+    }
+  }
+
+  .clean-hero-slider .orbit-slide {
+    padding-bottom: 40%;
+    background: #0a0a0a;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-slide {
+      padding-bottom: 0;
+    }
+  }
+
+  .clean-hero-slider .orbit-controls button {
+    background: #ffae00;
+    padding: 1rem 0.5rem;
+  }
+
+  .clean-hero-slider .orbit-controls button:hover {
+    background: #fefefe;
+    color: #0a0a0a;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-controls .orbit-previous {
+      left: auto;
+      right: 2.4rem;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-controls .orbit-next {
+      right: 0.5rem;
+    }
+  }
+
+  .clean-hero-slider .orbit-bullets {
+    display: none;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .clean-hero-slider .orbit-bullets {
+      display: block;
+      margin-bottom: 0;
+      margin-top: -3rem;
+      background: none;
+    }
+  }
+
+  .clean-hero-slider .orbit-bullets button {
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 0;
+    background-color: #fefefe;
+  }
+
+  .clean-hero-slider .orbit-bullets button.is-active {
+    background-color: #ffae00;
+  }
+
+  .clean-hero-slider ul.orbit-container {
+    height: auto !important;
+  }
+
+  .clean-hero-slider li.orbit-slide {
+    max-height: none !important;
+  }
+
+  /* end clean hero slider */
