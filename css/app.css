@@ -8,6 +8,12 @@ body {
 
     /* color: #020d53; */
     font-family: 'Open Sans', sans-serif;
+    /* with Oswald */
+
+font-family: 'Cardo', serif;
+    /* with Pathway */
+    font-family: 'Roboto Mono', monospace;
+/* with Rubik */
 
 }
 
@@ -22,16 +28,29 @@ p {
     /* actual text element sized in ems */
 }
 h1, h2, h3 {
+    /*    font-family: 'Pathway Gothic One', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
     font-family: 'Oswald', sans-serif;
+
     text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: black;
     line-height: 1.1;
 
 }
 h1 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 900;
+}
+.tagline {
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+
+    z-index: 999;
+}
+.tagline h1 {
+    font-size: 8rem;
+    color: #0b7af3;
 }
 h2 {
     /* font-size: 2rem; */
@@ -49,6 +68,7 @@ h3 {
 }
 
 /* ===========================================  title section =====================================  */
+
 .title-bar, .top-bar
  {
 
@@ -62,7 +82,8 @@ h3 {
     background-color: #fff;
 
     /* background-blend-mode: multiply; */
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Pathway', sans-serif; */
+
     /* text-transform: uppercase; */
     padding: 0.3rem;
 
@@ -70,6 +91,30 @@ h3 {
 .title-bar {
     color: #000;
 }
+.top-bar, .top-bar ul {
+    background-color: #fff;
+    margin-left: 2rem;
+}
+.name a {
+    color: #fff !important;
+    position: fixed !important;
+    top: 143px !important;
+    left:-87px !important;
+    -webkit-transform: rotate(-90deg) !important;
+    transform: rotate(-90deg) !important;
+    z-index: 999 !important;
+}
+.name {
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+.name li {
+    display: inline-block;
+}
+
 
 /* responsive Sticky Menu  */
 
@@ -99,7 +144,9 @@ h3 {
       background: #000;
       box-shadow: 0 7px 0 #000, 0 14px 0 #000;
   }
-
+  /* .top-bar ul {
+      position: relative;
+  } */
 
 /* end navigation */
 .intro, .service {
@@ -181,14 +228,14 @@ h3 {
   .clean-hero-slider .orbit-caption h3 {
     color: #ffae00;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 0;
   }
 
   @media print, screen and (min-width: 40em) {
     .clean-hero-slider .orbit-caption h3 {
       font-size: 2.5rem;
-      font-weight: normal;
+      /* font-weight: normal; */
     }
   }
 
@@ -216,13 +263,13 @@ h3 {
   @media print, screen and (min-width: 40em) {
     .clean-hero-slider .orbit-controls .orbit-previous {
       left: auto;
-      right: 2.4rem;
+      right: 4.4rem;
     }
   }
 
   @media print, screen and (min-width: 40em) {
     .clean-hero-slider .orbit-controls .orbit-next {
-      right: 0.5rem;
+      right: 2.5rem;
     }
   }
 
@@ -234,9 +281,13 @@ h3 {
     .clean-hero-slider .orbit-bullets {
       display: block;
       margin-bottom: 0;
-      margin-top: -3rem;
+      margin-top: -5rem;
       background: none;
     }
+     /* added */
+  .orbit-container {
+    margin: 0 2rem;
+}
   }
 
   .clean-hero-slider .orbit-bullets button {
@@ -251,11 +302,35 @@ h3 {
   }
 
   .clean-hero-slider ul.orbit-container {
-    height: auto !important;
+    /* height: auto !important; */
+    /* height: 61.8vh; */
+    height: 84vh;
   }
 
   .clean-hero-slider li.orbit-slide {
-    max-height: none !important;
+    /* max-height: none !important; */
+    height: 100% !important;
   }
+
+   .orbit-figure img {
+ /* height: 100% !important;
+      width: auto;      */
+
+    /* width: 100%;
+    max-width: 100%; */
+    margin: 0;
+
+
+}
+img.orbit-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    /* max-height: 100%; */
+}
+
+}
+
 
   /* end clean hero slider */
