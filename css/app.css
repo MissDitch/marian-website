@@ -5,44 +5,17 @@ html {
 }
 body {
     background: #fff;
-     /* 010 Winter Neva */
-    /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-    /* 161 Salt Mountain */
-    /* background-image: linear-gradient(-90deg, #FFFEFF 0%, #D7FFFE 100%); */
-    /* 162 Perfect White */
-    /* background-image: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%); */
-    /* 163 Fresh Oasis */
-    /* background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%); */
     font-family: 'Open Sans', sans-serif;
-    /* with Oswald */
-/* Ventana Azul - color.adobe.com
-https://color.adobe.com/nl/Ventana-Azul-color-theme-2159606/*/
-color: #F2385a;
-color: #f5a503;
-color: #e9f1df;
-color: #4ad9d9;
-color: #2f2933;
-
-/* background-image: linear-gradient(90deg, #4ad9d9 0%, #e9f1df 100%); */
-
-/* friends and foes - color.adobe.com
-https://color.adobe.com/nl/Friends-and-foes-color-theme-1175537/ */
-color: #2f2933;
-color: #01a2a6;
-color: #29d9c2;
-color: #bdf271;
-color: #ffffa6;
-background-color: #ffffa6;
-background-color:rgba(255, 255, 166, 0.8);
-/* background-color:rgba(255, 255, 166, 0.65); */
-/* background-image: linear-gradient(90deg, #bdf271 0%, #ffffa6 100%); */
-
-/* font-family: 'Cardo', serif; */
-    /* with Pathway */
-    /* font-family: 'Roboto Mono', monospace; */
-/* with Rubik */
-color: #2f2933;
-
+    /* Ventana Azul - color.adobe.com
+    https://color.adobe.com/nl/Ventana-Azul-color-theme-2159606/*/
+    color: #F2385a;
+    color: #f5a503;
+    color: #e9f1df;
+    color: #4ad9d9;
+    color: #36B1BF;
+    /* 2D95A1 darker version */
+    background-color: #e9f1df;
+    color: #11393D;
 }
 
 li {
@@ -51,15 +24,11 @@ li {
 .article {
     font-size: 1.2rem;  /* module size sized in rems */
 }
-p {
-    /* font-size: 0.8em;   */
-    /* actual text element sized in ems */
-}
 a {
-    color: #2f2933;
+    color: #11393D;
 }
 a:hover {
-    color: #01a2a6;
+    color: #36B1BF;
 }
 h1, h2, h3 {
        font-family: 'Karla', sans-serif;
@@ -75,13 +44,13 @@ h1, h2, h3 {
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #01a2a6;
+    color: #36B1BF;
 }
 
 .underline{
    display: inline-block;
    padding-bottom: 0.3rem;
-   border-bottom: 0.2rem solid #01a2a6;
+   border-bottom: 0.2rem solid #36B1BF;
 }
 h2 {
     /* font-size: 2rem; */
@@ -105,8 +74,9 @@ h3 {
 }
 .title-bar, .top-bar {
     background-color: #fff;
-    background-color: #ffffa6;
-    background-color:rgba(255, 255, 166, 0.45);
+    background-color: #4ad9d9;
+    /* background-color:rgba(255, 255, 166, 0.45); */
+    /* backgrond-uimage: linear-gradient(250deg, #ffffa6 0%, #fff 100%); */
      /* 010 Winter Neva */
      /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
      /* 161 Salt Mountain */
@@ -118,59 +88,49 @@ h3 {
 
     /* background-blend-mode: multiply; */
     font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0.3rem;
     z-index: 999;
 }
 .title-bar, .title-bar a {
-    color: #01a2a6;
+    color: #36B1BF;
     font-weight: 400;
 }
-.top-bar, .top-bar ul {
-    /* margin-left: 2rem; */
-    padding-left: 2rem;
-}
+
 .top-bar ul {
     background-color: transparent;
-}
-.name a {
-    color: #bdf271;
-    /* letter-spacing: 0.05em; */
-    position: fixed !important;
-    top: 191px !important;
-    left:-117px !important;
-    -webkit-transform: rotate(-90deg) !important;
-    transform: rotate(-90deg) !important;
-    z-index: 999 !important;
+
 }
 
-.name a:hover {
-    color: #01a2a6;
-}
-.name {
+.logo a {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    text-transform: lowercase;
+    line-height: 1;
 }
-.name li {
-    display: inline-block;
-}
+
 .dropdown.menu li {
     padding: 0 0.7rem;
 }
 .dropdown.menu a {
-    letter-spacing: 0.05em;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.05em; */
+    line-height: 1;
     padding: 0.7rem 0;
     border-bottom: 0.4rem solid transparent;
+    /* vertical-align: text-bottom; */
 }
 .dropdown.menu li:first-child a {
     /* border-top: 0.15rem solid #ffffa6; */
+    margin-right: 3rem;
 }
 .dropdown.menu a:hover{
-    border-bottom: 0.4rem solid #bdf271;
+    border-bottom: 0.4rem solid #F2385a;
 }
 .dropdown.menu .name a {
     border-bottom: 0.4rem solid transparent;
+
 }
 .bold{
     font-weight: 600;
@@ -274,9 +234,10 @@ h3 {
         left: 0;
         right: 0;
         margin: 0 auto;
-        width: 24rem;
-        height: 0.2rem;
-        background: #bdf271;
+        width: 3rem;
+        height: 0.4rem;
+        background: #36B1BF;
+        /* background-image: linear-gradient(-220deg, #ffffa6 0%, #01a2a6 100%); */
     }
     .service {
         padding: 3rem 0.5rem;
@@ -295,14 +256,17 @@ h3 {
     text-align: center;
     padding: 1rem;
     margin: 0 auto;
-  }
-  .bottom-content-section svg {
+}
+.bottom-content-section svg {
     height: 3.75rem;
     width: 3.75rem;
     fill: #fefefe;
-  }
-  .button {
-    background-color: #29d9c2;
+}
+.button {
+    background-color: #f5a503;
+}
+.button:hover {
+    background-color: #36B1BF;
 }
 
 
@@ -368,7 +332,7 @@ h3 {
   }
 
   .clean-hero-slider .orbit-caption h3   {
-    color: #bdf271;
+    color: #f5a503;
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 0;
@@ -394,7 +358,7 @@ h3 {
   }
 
   .clean-hero-slider .orbit-controls button {
-    background: #bdf271;
+    background: #f5a503;
     padding: 1rem 0.5rem;
   }
 
@@ -428,7 +392,7 @@ background-color: #fefefe;
 }
 
 .clean-hero-slider .orbit-bullets button.is-active {
-background-color: #bdf271;
+background-color: #F2385a;
 }
 
 .clean-hero-slider ul.orbit-container {
@@ -468,3 +432,157 @@ height: 100% !important;
 }
 
   /* end clean hero slider */
+
+
+  /* masonry type grid layout */
+.portfolio {
+    margin-top: 3rem;
+    background-color: #11393D;
+
+}
+
+.masonry-css {
+    -webkit-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+  }
+
+  @media screen and (min-width: 25em) {
+    .masonry-css {
+      -webkit-column-count: 1;
+              column-count: 1;
+    }
+  }
+
+  @media screen and (min-width: 37.5em) {
+    .masonry-css {
+      -webkit-column-count:2;
+              column-count: 2;
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    .masonry-css {
+      -webkit-column-count: 2;
+              column-count:2;
+    }
+  }
+
+  /* @media screen and (min-width: 68.75em) {
+    .masonry-css {
+      -webkit-column-count: 5;
+              column-count: 5;
+    }
+  } */
+
+  .masonry-css-item {
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+    margin-bottom: 0rem;
+    padding: 1rem;
+  }
+
+
+
+  /* end masonry type grid layout */
+
+
+  /* marketing-site footer */
+footer > div {
+    padding: 1rem;
+}
+footer i {
+    color: white;
+}
+
+.marketing-site-footer {
+    background: #36B1BF;
+    color: #white;
+    padding: 2rem 0 0;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .marketing-site-footer .marketing-site-footer-menu-social a {
+    color: #fefefe;
+  }
+
+  .marketing-site-footer .cell {
+    margin-bottom: 30px;
+  }
+
+  .marketing-site-footer > .row {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    .marketing-site-footer .cell {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .marketing-site-footer-name {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .marketing-site-footer-title {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .marketing-site-footer-block {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .marketing-site-footer-block .fa {
+    font-size: 2rem;
+    color: #020304;
+  }
+
+  .marketing-site-footer-block p {
+    margin-left: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .marketing-site-footer-bottom {
+    background: #4ad9d9;
+    padding: 1rem;
+  }
+
+  .marketing-site-footer-bottom p,
+  .marketing-site-footer-bottom .menu {
+    margin-bottom: 0;
+  }
+
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+    color: #8aa0ae;
+  }
+
+  @media screen and (max-width: 63.9375em) {
+    .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 63.9375em) {
+    .marketing-site-footer-bottom {
+      text-align: center;
+    }
+  }
+
+  /* end marketing-site footer  */
