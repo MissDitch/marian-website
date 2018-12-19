@@ -13,6 +13,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Pathway+Gothic+One|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -20,34 +21,38 @@
 
  <!-- Responsive Sticky Menu -->
 
-        <div data-sticky-container>
-            <div data-sticky data-options="marginTop:0;">
+ <div data-sticky-container>
+        <div data-sticky data-options="marginTop:0;">
 
-              <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-                    <div class="title-bar-title logo">
-                            <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic
-                    </div>
-                  <div class="title-bar-right">
-                <button class="menu-icon" type="button" data-toggle="example-menu"></button> </div>
-
-              </div>
-                <div class="grid-container">
-                <div class="top-bar align-right" id="example-menu">
-                    <ul class="vertical  medium-horizontal dropdown menu align-center" data-responsive-menu="accordion medium-dropdown">
-                    <li class="logo show-for-medium" ><a href="#" > <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a> </li>
-                    <li>
-                        <a href="#"><span class="" >Illustraties
-                        </span> </a>
-                    </li>
-                    <li><a href="#"><span class="italic"> Waarom</span></a></li>
-                    <!-- <li><a href="#"></a></li> -->
-                    <li><a href="#"><span class="">Contact</span></a></li>
-                    </ul>
+            <div class="title-bar show-for-small-only" >
+                <div class="title-bar-title logo">
+                    <a href="#" > <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a>
                 </div>
-                </div>
-
+                <!-- <div class="title-bar-right">Illustratie studio    </div> -->
             </div>
-          </div>
+
+            <div class="grid-container">
+                <div class="top-bar hide-for-small-only">
+                    <div class="top-bar-title logo">
+                            <a class="" href="#"> <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a>
+                    </div>
+                    <div class="top-bar-right">
+                        <ul class=" small-horizontal menu" >
+
+                        <li>
+                            <a class="" href="#"><span class="" >Werk
+                            </span> </a>
+                        </li>
+                        <li><a href="#"><span class="italic">Studio</span></a></li>
+                        <!-- <li><a href="#"></a></li> -->
+                        <li><a href="#"><span class="">Contact</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
  <!-- end Responsive Sticky Menu -->
@@ -68,17 +73,26 @@
 
             <div class="grid-x grid-padding-x">
                 <div class="small-12 cell tagline">
-                        <h1><span class="">Uw <span class="">eigen</span> gezicht</span></h1>
-                        <h2 class="">Wij maken illustraties voor een <span class="">bijzondere online</span> identiteit</h2>
+                        <!-- <h1><span class="">Uw <span class="">eigen</span> gezicht</span></h1> -->
+
+                        <h1><span class="">illustraties</span></h1>
+                        <!-- <h2 class="">voor een <span class="">unieke visuele</span> identiteit</h2> -->
+
+                        <h2 class="">Wij zijn imagemagnific</h2>
+                        <p>Wij maken illustraties in verschillende stijlen. Voor een unieke identiteit.</p>
+                        <p>De illustraties kunnen groot zijn of klein, voor allerlei toepassingen, zoals header, hero, banner of icoon. </p>
+
+                        <!-- <h2>Wij dragen bij aan een <span>unieke visuele identiteit</span></h2> -->
+
                 <!-- </div>
                 <div class="bottom-content-section" data-magellan data-threshold="0"> -->
-                        <a href="#" class="button">Wat kunnen wij voor u doen?
-                        </a>
+                        <!-- <a href="#" class="button">Kijk wat wij kunnen doen
+                        </a> -->
                   </div>
             </div>
 
 
-            <div  id="main-content-section" data-magellan-target="main-content-section"class="grid-x grid-padding-x  ">
+
                 <!-- <div class="large-12 cell intro ">                    <h1>We bieden:</h1>
                     <div class="grid-x grid-margin-x grid-margin-y">
 
@@ -110,70 +124,86 @@
 
             <div class="small-12  portfolio">
                 <div class="masonry-css">
+                    <div class="masonry-css-item">
 
-                    <div class="masonry-css-item">
-                        <a class="" href="filmfabriek1.html">
+                        <figure class="tile tile--left">
+                            <a class="" href="filmfabriek1.html">
                                 <img src="img/FilmfabriekDef.jpg" class="" height="" width="" alt="">
-                                <span class="inner" style="background-color:#27599c;">
-                                        <span class="helper"></span>
-                                        <span class="info">
-                                        <h3>De Filmfabriek</h3>
-                                        <p>Eigen opdracht</p>
-                                        </span>
-                                    </span>
-                        </a>
-                    </div>
-                    <div class="masonry-css-item">
-                            <img src="img/duikboot.jpg" class="" height="" width="" alt="">
+                                <figcaption class="tile__overlay">
+                                    <div class="info-panel info-panel--blue">
+                                        <header class="info-panel__header">
+                                            De Filmfabriek
+                                        </header>
+                                        <div class="info-panel__content">
+                                        <span class="info">Eigen opdracht</span>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
                     </div>
 
                     <!--doorklik -->
                     <div class="masonry-css-item">
-                        <a href="stadskyline.html" class="">
-                            <img src="img/Stad01Def.jpg" class="" height="" width="" alt="">
-                            <span class="inner" style="background-color:#443153;">
-                                    <span class="helper"></span>
-                                    <span class="info">
-                                    <h3>Stad skyline</h3>
-                                    <p>Eigen opdracht</p>
-                                    </span>
-                                </span>
-                        </a>
+                        <figure class="tile tile--bottom">
+                            <a class="" href="stadskyline.html">
+                                <img src="img/Stad01Def.jpg" class="" height="" width="" alt="">
+                                <figcaption class="tile__overlay">
+                                    <div class="info-panel info-panel--purple">
+                                        <header class="info-panel__header">
+                                            Stad skyline
+                                        </header>
+                                        <div class="info-panel__content">
+                                        <span class="info">Eigen opdracht</span>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
                     </div>
 
-                    <div class="masonry-css-item">
-                      <img src="img/rijtjeHuizen.jpg" class="" height="" width="100%" alt="">
-                    </div>
-                    <div class="masonry-css-item">
-                      <img src="img/BosjesMan02.jpg" class="" height="" width="" alt="">
-                    </div>
-                    <div class="masonry-css-item">
-                      <img src="img/versterker.jpg" class="" height="" width="" alt="">
-                    </div>
+
+
+
 
             <!-- ddoorklik -->
                     <div class="masonry-css-item">
-                        <a href="stadinwater.html">
-                            <img src="img/stadinwater.jpg" class="" height="" width="" alt="">
-                            <span class="inner" style="background-color:#9c509a;">
-                                <span class="helper"></span>
-                                <span class="info">
-                                <h3>Stad in water</h3>
-                                <p>Eigen opdracht</p>
-                                </span>
-                            </span>
-                        </a>
+                            <figure class="tile tile--top">
+                                    <a class="" href="stadinwater.html">
+                                        <img src="img/stadinwater.jpg" class="" height="" width="" alt="">
+                                        <figcaption class="tile__overlay">
+                                            <div class="info-panel info-panel--purplered">
+                                                <header class="info-panel__header">
+                                                    Stad in water
+                                                </header>
+                                                <div class="info-panel__content">
+                                                <span class="info">Eigen opdracht</span>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+
                     </div>
-                    <div class="masonry-css-item">
-                        <img src="img/Stad2.jpg" class="" height="" width="" alt="">
-                        </div>
+
 
                     <div class="masonry-css-item">
-                      <img src="img/Motormeisje02.jpg" class="" height="" width="" alt="">
-                    </div>
+                            <figure class="tile tile--right">
+                                    <a class="" href="#">
+                                        <img src="img/stad.jpg" class="" height="" width="" alt="">
+                                        <figcaption class="tile__overlay">
+                                            <div class="info-panel info-panel--blue">
+                                                <header class="info-panel__header">
+                                                    Stad zwart-wit
+                                                </header>
+                                                <div class="info-panel__content">
+                                                <span class="info">Eigen opdracht</span>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </figure>
 
-                     <div class="masonry-css-item">
-                      <img src="img/stad.jpg" class="" height="" width="" alt="">
                     </div>
 
 
@@ -186,55 +216,66 @@
 
 
 
+                    <div class=" small-12 service">
+                        <a href="werk.html" class="button">Laat alles zien
+                            </a>
+                        </div>
 
 
 
+        </div>
 
 
-        <footer class="marketing-site-footer">
-            <div class="grid-x">
-            <div class="medium-4 cell footer-column">
-                <h4 class="marketing-site-footer-name">imagemagnific</h4>
-                <p>Wij maken illustraties voor een unieke identiteit. </p>
-                <ul class="menu marketing-site-footer-menu-social simple">
-                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="medium-4 cell ">
-                <h4 class="marketing-site-footer-title">Contact Info</h4>
 
-                <div class="marketing-site-footer-block">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <p>1 (800) 555-5555</p>
+        <footer class="footer">
+            <div class="footer-top grid-x ">
+                <div class="medium-4 cell ">
+                    <h4 class="footer-name">Wij zijn imagemagnific</h4>
+                    <p>Wij maken illustraties in verschillende stijlen. Voor een unieke identiteit.</p>
+                    <a href="#" class="button">Meer weten?
+                        </a>
+
+
                 </div>
-                <div class="marketing-site-footer-block">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-                <p>yetirules@fakeemail.com</p>
+                <div class="medium-4 medium-offset-1 cell ">
+                        <h4 class="footer-name">Onze missie</h4>
+                        <p>De eerste indruk kun je maar één keer maken. Met onze illustraties willen wij uw website of app een bijzondere en speciale uitstraling geven. </p>
+
+
+                    </div>
+
+                <div class="small-menu small-12 cell">
+                    <p>&copy; 2018 imagemagnific</p>
+                    <ul class="menu horizontal footer-top-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+
+                    </ul>
                 </div>
-            </div>
+
 
             </div>
-            <div class="marketing-site-footer-bottom">
-            <div class="row align-middle">
-                <div class="cell">
-                <p>&copy; 2018 imagemagnific</p>
+
+
+            <div class="footer-bottom show-for-small-only">
+                <div class="grid-x align-middle">
+                    <div class="cell">
+                        <ul class="menu footer-bottom-links">
+
+                            <li><a class="active" href="#">Werk</a></li>
+                            <li><a href="#">Studio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cell">
-                <ul class="menu marketing-site-footer-bottom-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                </div>
-            </div>
             </div>
         </footer>
 
 
-</div>
+
 
 
 

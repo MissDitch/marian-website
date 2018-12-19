@@ -13,6 +13,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Pathway+Gothic+One|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -20,35 +21,42 @@
 
  <!-- Responsive Sticky Menu -->
 
-        <div data-sticky-container>
-            <div data-sticky data-options="marginTop:0;">
+ <div data-sticky-container>
+        <div data-sticky data-options="marginTop:0;">
 
-                    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-                            <div class="title-bar-title logo">
-                                    <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic
-                            </div>
-                          <div class="title-bar-right">
-                        <button class="menu-icon" type="button" data-toggle="example-menu"></button> </div>
-
-                      </div>
-
-                <div class="grid-container">
-                <div class="top-bar align-right" id="example-menu">
-                    <ul class="vertical  medium-horizontal dropdown menu align-center" data-responsive-menu="accordion medium-dropdown">
-                    <li class="logo show-for-medium" ><a href="#" >  <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a> </li>
-                    <li>
-                        <a href="#"><span class="extrabold" >Illustraties
-                        </span> </a>
-                    </li>
-                    <li><a href="#"><span class="italic"> Waarom</span></a></li>
-                    <!-- <li><a href="#"></a></li> -->
-                    <li><a href="#"><span class="bold">Contact</span></a></li>
-                    </ul>
+            <div class="title-bar show-for-small-only" >
+                <div class="title-bar-title logo">
+                    <a href="#" > <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a>
                 </div>
+                <div class="title-bar-right">Illustratie studio
+            <!-- <button class="menu-icon" type="button" data-toggle="example-menu"></button>  -->
                 </div>
-
             </div>
-          </div>
+
+            <div class="grid-container">
+                <div class="top-bar hide-for-small-only">
+                    <div class="top-bar-title logo">
+                            <a class="" href="#"> <span class="" style="font-weight:500"> image</span>mag<span style="font-weight:300">nif</span>ic</a>
+                    </div>
+                    <div class="top-bar-right">
+                        <ul class=" small-horizontal menu" >
+
+                        <li>
+                            <a href="#"><span class="" >Werk
+                            </span> </a>
+                        </li>
+                        <li><a href="#"><span class="italic">Diensten</span></a></li>
+                        <!-- <li><a href="#"></a></li> -->
+                        <li><a href="#"><span class="">Contact</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
 
  <!-- end Responsive Sticky Menu -->
@@ -66,10 +74,20 @@
                                 <div class="cell image-container">
                                         <img src="img/Stad01Def.jpg">
                                     </div>
-                                    <div class="cell tekst">
+                                    <div class="cell  tekst">
                                             <h3><span>Stad skyline</span></h3>
-                                            <p>Illustratie in eigen opdracht</p>
+                                            <p>Illustratie in eigen opdracht. </p>
+
                                         </div>
+                                        <div class="cell hide-for-landscape  tekst">
+
+                                                <p>kantel uw apparaat om de illustratie schermvullend te zien</p>
+
+                                            </div>
+                                        <div class="cell medium-8 large-5 medium-offset-2 tekst">
+                                                <h3><span>Mogelijkheden</span></h3>
+                                                <p>Bijzonder geschikt voor hero illustraties en banners. Bij het maken van de illustratie kan rekening worden gehouden met de plaatsing van tekst of buttons. <br> Hieronder ziet u een toepassing van deze illustratie.</p>
+                                            </div>
 
                         </div>
 
@@ -78,7 +96,7 @@
                                 <div class="cell image-container">
                                         <img src="img/stad01-skyline.jpg">
                                     </div>
-                                    <div class="cell tekst">
+                                    <div class="cell tekst medium-4 medium-offset-1">
                                             <h3><span>Toepassing:</span></h3>
                                             <p>Hero banner voor een reisbureau</p>
                                         </div>
@@ -104,48 +122,46 @@
 
 
 
-        <footer class="marketing-site-footer">
-            <div class="grid-x">
-            <div class="medium-4 cell">
-                <h4 class="marketing-site-footer-name">Image Magnifique</h4>
-                <p>Wij maken illustraties voor online en offline uitingen. </p>
-                <ul class="menu marketing-site-footer-menu-social simple">
-                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="medium-4 cell">
-                <h4 class="marketing-site-footer-title">Contact Info</h4>
+        <footer class="footer">
+                <div class="footer-top grid-x hide-for-small-only">
+                    <div class="medium-6 cell ">
+                        <h4 class="footer-name">imagemagnific</h4>
+                        <p>Wij maken illustraties voor een unieke identiteit. </p>
+                        <ul class="menu footer-menu-social simple">
+                        <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="auto medium-offset-1 cell ">
+                        <h4 class="footer-title">Contact Info</h4>
 
-                <div class="marketing-site-footer-block">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <p>1 (800) 555-5555</p>
-                </div>
-                <div class="marketing-site-footer-block">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-                <p>yetirules@fakeemail.com</p>
-                </div>
-            </div>
+                        <div class="footer-block">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <p>1 (800) 555-5555</p>
+                        </div>
+                        <div class="footer-block">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p>yetirules@fakeemail.com</p>
+                        </div>
+                    </div>
 
-            </div>
-            </div>
-            <div class="marketing-site-footer-bottom">
-            <div class="row align-middle">
-                <div class="cell">
-                <p>&copy; 2018 image magnifique</p>
                 </div>
-                <div class="cell">
-                <ul class="menu marketing-site-footer-bottom-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+
+                <div class="footer-bottom show-for-small-only">
+                    <div class="grid-x align-middle">
+                        <div class="cell">
+                        <ul class="menu footer-bottom-links">
+
+                            <li><a class="active" href="#">Werk</a></li>
+                            <li><a href="#">Diensten</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </footer>
+            </footer>
 
 
 </div>
