@@ -1,0 +1,77 @@
+.project--animating {
+  animation: slideInUp 175ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.portfolio--animating {
+  animation: fade-in 175ms cubic-bezier(0.4, 0, 0.6, 1); }
+
+.hoofdkop {
+  animation: slide-in-left 900ms 0ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.project-content {
+  animation: opacity 375ms 950ms cubic-bezier(0, 0, 0.2, 1);
+  opacity: 1; }
+
+.project-content-header {
+  animation: slide-in 950ms 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.project,
+.intro {
+  animation: fade-in 1.5s 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.project-content p {
+  animation: slide-up 950ms 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.project-content-header:before {
+  animation: fade-in-slow 2s 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.boat.right {
+  animation: fade-in-slow 1.5s 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.portfolio {
+  animation: fade-in-slow 0.5s 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+.masonry-css-item:nth-child(n) {
+  animation: fade-in-slow 1s 0ms cubic-bezier(0, 0, 0.2, 1); }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade-in-slow {
+  from, 70% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes slide-in {
+  from {
+    transform: translateY(-5rem);
+    opacity: 1; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes slide-up {
+  from {
+    transform: translateY(20rem);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes slide-in-left {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/*# sourceMappingURL=styles.css.map */

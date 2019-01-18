@@ -1,0 +1,141 @@
+
+//   Sass Variables
+//   We provide timing functions which you can use with the animation or transition CSS properties
+
+//   @import "@material/animation/variables";
+
+//   .my-element--animating {
+//     animation: foo-keyframe 175ms $mdc-animation-standard-curve-timing-function;
+//   }
+@import "@material/animation/variables";
+
+.project--animating {
+    animation: slideInUp 175ms $mdc-animation-standard-curve-timing-function;
+  }
+.portfolio--animating {
+    animation: fade-in 175ms $mdc-animation-sharp-curve-timing-function;
+}
+
+@import "@material/animation/functions";
+// .my-element {
+//     transition: mdc-animation-exit-permanent(/* $name: */ opacity, /* $duration: */ 175ms, /* $delay: */ 150ms);
+//     opacity: 0;
+//     will-change: opacity;
+
+//     &--animating {
+//       transition: mdc-animation-enter(/* $name: */ opacity, /* $duration: */ 175ms);
+//       opacity: 1;
+//     }
+//   }
+.hoofdkop {
+    animation: hoofdkop-enter(slide-in-left, 900ms);
+}
+
+.project-content {
+  animation: mdc-animation-enter(/* $name: */ opacity, /* $duration: */ 375ms, /* $delay: */ 950ms);
+  opacity: 1;
+}
+
+.project-content-header{
+    animation: mdc-animation-enter(/* $name: */ slide-in, /* $duration: */ 950ms);
+}
+.project,
+.intro {
+animation: mdc-animation-enter(/* $name: */ fade-in, /* $duration: */ 1.5s);
+}
+
+.project-content p {
+animation: mdc-animation-enter(/* $name: */ slide-up, /* $duration: */ 950ms /* $delay: */ );
+}
+.project-content-header:before{
+    animation: mdc-animation-enter(/* $name: */ fade-in-slow, /* $duration: */ 2s);
+
+}
+.boat.right {
+    animation: mdc-animation-enter(/* $name: */ fade-in-slow, /* $duration: */ 1.5s);
+
+}
+
+.portfolio {
+    animation: mdc-animation-enter(/* $name: */ fade-in-slow, /* $duration: */ 0.5s);
+}
+.masonry-css-item:nth-child(n) {
+    animation: mdc-animation-enter(/* $name: */ fade-in-slow, /* $duration: */ 1s);
+}
+
+
+//   .project {
+//     will-change: auto !important;
+//     backface-visibility: visible !important;
+//     -webkit-backface-visibility: visible !important;
+//   }
+
+
+  @keyframes fade-in {
+    from {
+      // transform: translateY(-80px);
+      opacity: 0;
+    }
+
+    to {
+      // transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-slow {
+      from, 70% {
+        // transform: translateY(-80px);
+        opacity: 0;
+      }
+      to {
+        // transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+  @keyframes slide-in {
+      from {
+        transform: translateY(-5rem);
+        opacity: 1;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-up {
+      from {
+        transform: translateY(20rem);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-left {
+      from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+      }
+
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes slideInUp {
+        from {
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }

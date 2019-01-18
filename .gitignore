@@ -1,2 +1,5 @@
 #ignore folder named 'ignore'
 ignore/
+
+#ignore folder named 'node_modules'
+node_modules/

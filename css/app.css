@@ -80,7 +80,7 @@ input, button, select, textarea {
     padding: 0rem;
     z-index: 999;
     /* transition: all 0.5s ease; */
-    animation: slideInDown 0.5s;
+    /* animation: slideInDown 0.5s; */
 }
 .top-bar {
     background-color: rgba(0, 0, 0, 0);
@@ -394,15 +394,24 @@ article {
     padding: 1rem 0 0;
     margin-bottom: 3rem;
     text-align: center;
-    transition-delay: 0.5s;
-    animation: slideInLeft 0.8s;
+    position: relative;
+
+    /* #easeOutCirc  */
+    /* -webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:         all 600ms cubic-bezier(0.075, 0.82, 0.165, 1); */
+    /* #easeInOutBack input[type="checkbox"]:checked ~ .rectangle { */
+        /* -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+
 }
+
 .hoofdkop.omhoog {
     /* margin-top: -3.5rem;
     margin-bottom: 6rem; */
     margin: 0 auto;
-    padding: 1rem 0 ;
-    position: relative;
+    padding: 0 ;
+    position: absolute;
+    top: 58%;
 }
 .hoofdkop.omhoog h1 {
     color: #fff;
@@ -480,6 +489,9 @@ article {
     .boat.left {
         animation: driftToLeft 120s linear infinite;
     }
+    .hoofdkop.omhoog {
+        position: relative;
+    }
     .hoofdkop h1 span {
         line-height: 10rem;
     }
@@ -545,13 +557,14 @@ article {
 
     padding:0 0 1rem 0;
   }
-  ,
-  .no-masonry-css-item {
 
+  .no-masonry-css-item {
+    /* -webkit-column-break-inside: avoid;
+    break-inside: avoid; */
     margin-bottom: 0rem;
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 
     padding:0 0 1rem 0;
   }
@@ -587,7 +600,7 @@ article {
     padding: 0.1rem;
   }
   .info-panel__header,
-  .project-content h3 {
+  .project-content-header {
     color: #f5a503;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
@@ -600,7 +613,7 @@ article {
       color: #fff;
   }
 .info-panel__header,
-.project-content h3 span {
+.project-content-header span {
     background: linear-gradient(#fff 50%,#fff 0) repeat-x 0 100%;
     background-size: 0.05rem 0.05rem;
 }
@@ -635,7 +648,7 @@ article {
     }
     .tile--top .tile__overlay {
         width: 100%;
-        height: 50%;
+        height: 25%;
         top: 0;
         right: 0;
 
@@ -644,14 +657,15 @@ article {
     }
     .tile--bottom .tile__overlay {
         width: 100%;
-        height: 50%;
+        height: 25%;
 
         right: 0;
         bottom: 0;
         left: 0;
         transform: translateY(100%);
     }
-    .masonry-css-item:hover .tile__overlay {
+    .masonry-css-item:hover .tile__overlay,
+    .no-masonry-css-item:hover .tile__overlay {
         transform: translate(0);
         opacity: 1;
     }
@@ -696,22 +710,22 @@ article {
     margin-top: 0.5rem;
     position: relative;
     /* transition-delay: 2s; */
-    animation: fadeIn 0.5s;
+    /* animation: fadeIn 1.5s; */
 
 }
 
-.project-content h3{
+.project-content-header{
     text-indent: 3rem;
 
 }
-.project-content h3:before {
+.project-content-header:before {
     position: absolute;
     content: "";
     width: 0.68rem;
     height: 0.68rem;
     background: #5bd0eb;
 }
-.project-content h3:before {
+.project-content-header:before {
     top: 0rem;
     left: 1.5rem;
 }
@@ -892,8 +906,8 @@ footer i {
   }
   .footer-bottom-links {
     /* transition: all 0.5s ease; */
-    transition-delay: 0.9s;
-    animation: slideInUp 1s;
+    /* transition-delay: 0.9s;
+    animation: slideInUp 1s; */
   }
 
 
