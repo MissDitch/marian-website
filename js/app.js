@@ -48,6 +48,41 @@ $('[data-curtain-menu-button]').click(function(){
 
  });
 
+// managing active state
+var top = document.getElementById("top");
+var topMenuLinks= top.getElementsByTagName("a");
+for (var i = 0; i < topMenuLinks.length; i++) {
+    // console.log("top menu links are " + topMenuLinks[i]);
+}
+
+var bottom = document.getElementById("bottom");
+var bottomMenuLinks= bottom.getElementsByTagName("a");
+for (var i = 0; i < bottomMenuLinks.length; i++) {
+    // console.log("bottom menu links are " + bottomMenuLinks[i]);
+}
+
+var currentPath = window.location.pathname.split('/');
+// console.log("currentPath is " + currentPath);
+var current = currentPath[currentPath.length - 1];
+// console.log("current is " + current);
+
+// console.log(werk);
+
+for (var i = 0; i < topMenuLinks.length; i++) {
+    var currentTopSplit = topMenuLinks[i].href.split('/');
+    // console.log("topmenulink splitted" + currentTopSplit);
+    var actualUrl = currentTopSplit[currentTopSplit.length - 1];
+    // console.log("actual url is " + actualUrl);
+    if(actualUrl == current)  {
+        // console.log("it's a match! " + topMenuLinks[i].href);
+        topMenuLinks[i].className = "active";
+    }
+    if(actualUrl.includes("stad")){
+        // console.log("anchor includes stad: " + actualUrl);
+        topMenuLinks[0].className = "active"
+
+    }
+}
 
 
 
